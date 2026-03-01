@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crud app</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Contacs app</h1>
+  <div>
+    <button id="create">Add Contact</button>
+    <button id="read">List Contacts</button>
+    <button id="update">Update Contact</button>
+    <button id="delete">Delete Contact</button>
+  </div>
+ 
+  <div id="update-container">
+    <label for="id">ID: </label>
+    <input type="number" id="update-id">
+    <label for="column">Column: </label>
+    <input type="text" id="column">
+    <label for="value">Value: </label>
+    <input type="text" id="value">
+    <button id="update-send">Update</button>
+  </div> 
+
+  <div id="delete-container">
+    <label for="delete-id">Contact delete</label>
+    <input type="number" id="delete-id">
+    <button id="delete-send">Delete</button>
+  </div>
+  <div id="add-container">
+    <label for="fname">First name</label>
+    <input type="text" id="fname">
+    <label for="lname">Last name</label>
+    <input type="text" id="lname">
+    <label for="email">Email</label>
+    <input type="text" id="email">
+    <label for="phone">Phone</label>
+    <input type="text" id="phone">
+
+    <button id="create-send">Send</button>
+  </div>
+
+  <div id="parent-container"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

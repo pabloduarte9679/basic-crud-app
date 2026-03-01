@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 try{
-  $pdo = new PDO("sqlite:crud.db");
+  $pdo = new PDO("sqlite:test.db");
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }catch(PDOException $e){
   http_response_code(500);
